@@ -7,7 +7,9 @@ import (
 	"net/url"
 	"path"
 	"strconv"
+)
 
+import (
 	"github.com/lGreenLightl/link-saver-bot/lib/consts"
 	"github.com/lGreenLightl/link-saver-bot/lib/e"
 )
@@ -57,7 +59,7 @@ func (c *Client) Updates(offset int, limit int) ([]Update, error) {
 	return response.Result, nil
 }
 
-func (c *Client) makeRequest(method string, query url.Values) (data []byte, err error) {
+func (c *Client) makeRequest(method string, query url.Values) ([]byte, error) {
 	currentURL := url.URL{
 		Scheme: "https",
 		Host:   c.host,
