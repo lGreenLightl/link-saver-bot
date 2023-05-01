@@ -36,3 +36,12 @@ const (
 	MessageSaved          = "Saved! 👌"
 	MessageAlreadyExists  = "You already have this page in your list ✌️"
 )
+
+const (
+	HostPath    = "api.telegram.org"
+	StoragePath = "../file-storage"
+)
+
+const (
+	BatchSize = 100
+)

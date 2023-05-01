@@ -25,7 +25,7 @@ var (
 	ErrUnknownMetaType  = errors.New("unknown meta type")
 )
 
-func NewEventProcessor(telegramClient *telegram.Client, storage storage.Storage) *EventsProcessor {
+func NewEventsProcessor(telegramClient *telegram.Client, storage storage.Storage) *EventsProcessor {
 	return &EventsProcessor{
 		telegramClient: telegramClient,
 		storage:        storage,
